@@ -1,0 +1,105 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Advanced To-Do List</title>
+
+    <!-- Connect CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Top Bar -->
+        <div class="top-bar">
+
+            <h1>Advanced To-Do List</h1>
+
+            <button id="themeBtn" type="button">
+                🌙
+            </button>
+
+        </div>
+
+
+        <!-- Input Section -->
+        <div class="input-section">
+
+            <input
+                type="text"
+                id="taskInput"
+                placeholder="Enter task"
+            >
+
+            <input
+                type="date"
+                id="dueDate"
+            >
+
+            <select id="priority">
+
+                <option value="High">High</option>
+
+                <option value="Medium" selected>
+                    Medium
+                </option>
+
+                <option value="Low">
+                    Low
+                </option>
+
+            </select>
+
+            <button id="addBtn" type="button">
+                Add
+            </button>
+
+        </div>
+
+
+        <!-- Filter Section -->
+        <div class="filter-section">
+
+            <button
+                class="filter-btn"
+                data-filter="all"
+                type="button">
+                All
+            </button>
+
+            <button
+                class="filter-btn"
+                data-filter="completed"
+                type="button">
+                Completed
+            </button>
+
+            <button
+                class="filter-btn"
+                data-filter="pending"
+                type="button">
+                Pending
+            </button>
+
+        </div>
+
+
+        <!-- Task List -->
+        <ul id="taskList"></ul>
+
+    </div>
+
+
+    <!-- Connect JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
+```
